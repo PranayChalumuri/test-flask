@@ -3,7 +3,6 @@ from app import app
 
 class FlaskAppTestCase(unittest.TestCase):
     def setUp(self):
-        # Set up a test client before each test
         self.app = app.test_client()
         self.app.testing = True
 
@@ -13,7 +12,7 @@ class FlaskAppTestCase(unittest.TestCase):
 
     def test_home_page_content(self):
         response = self.app.get('/')
-        self.assertIn(b"<title>", response.data)  # Change to a string inside index.html
+        self.assertIn(b"<title>", response.data)
 
 if __name__ == '__main__':
     unittest.main()
