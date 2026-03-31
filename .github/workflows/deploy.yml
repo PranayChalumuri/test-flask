@@ -9,8 +9,8 @@ on:
 env:
   AWS_REGION: ap-south-1
   ECR_REPOSITORY: test-flask
-  ECS_SERVICE: test-flask-service
-  ECS_CLUSTER: test-flask-cluster
+  ECS_SERVICE: test-flask-service-v2
+  ECS_CLUSTER: test-flask-cluster1
   ECS_TASK_DEFINITION: task-definition.json
   CONTAINER_NAME: test-flask-container
 
