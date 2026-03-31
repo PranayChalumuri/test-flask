@@ -4,11 +4,11 @@
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "256",
   "memory": "512",
-  "executionRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::337909760489:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "test-flask-container",
-      "image": "<ACCOUNT_ID>.dkr.ecr.ap-south-1.amazonaws.com/test-flask:latest",
+      "image": "337909760489.dkr.ecr.ap-south-1.amazonaws.com/test-flask:latest",
       "essential": true,
       "portMappings": [
         {
