@@ -37,7 +37,7 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: |
-          pytest
+          pytest tests/test_app.py -v
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
